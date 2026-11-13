@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: no-wiki-stays-inactive
+expected_outcome: |
+  The project has no wiki: its CLAUDE.md names no wiki root and no directory holds a SCHEMA.md.
+  The agent creates and changes no files, says the project has no wiki, and asks whether to create one.
+  This checks the skill's rule once it is running; it does not check whether the description triggers the skill.
+context:
+  scaffold_script: place-files.sh

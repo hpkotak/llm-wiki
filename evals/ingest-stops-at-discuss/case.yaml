@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: ingest-stops-at-discuss
+expected_outcome: |
+  The agent saves the new source under research/raw/products/ with its text unchanged and a metadata header
+  (Source, Collected, Published, Capture). It changes nothing under research/wiki/. Its reply states a
+  disposition and the key takeaways, names the articles it would create or update, and waits for the human
+  before compiling.
+context:
+  scaffold_script: place-files.sh

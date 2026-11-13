@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: lint-flags-fabricated-figure
+expected_outcome: |
+  The article research/wiki/products/acme-edge.md says 42K weekly active users, but its only source says 24K.
+  The lint report flags 42K as unsupported by the source and leaves the figure in the article unchanged.
+  A lint entry is appended to research/wiki/log.md.
+context:
+  scaffold_script: place-files.sh
